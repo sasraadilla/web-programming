@@ -1,0 +1,22 @@
+cek tugas
+
+buat halaman website berdasarkan mockup yang telah di buat
+framework css= kerangka kerja (bootstrap)
+
+cara memanggil : CDN = content delivery network,download, NPM
+/YARN/COMPOSER
+
+ABSOLUT
+Satu buah URL bisa terdiri dari protokol, 
+nama domain, alamat IP, path, query dan sebagainya.
+
+RELATIVE
+Namun bagian-bagian berikutnya, yaitu bagian /category/website/
+ adalah sebuah path yang digunakan untuk mengakses dua buah direktori tertentu.
+
+TUGAS 20 maret 2023
+
+Buatkan HTML dan CSS Bootstrap untuk wireframe yang telah anda buat
+
+Target minggu depan :
+Quiz & persiapan menghosting

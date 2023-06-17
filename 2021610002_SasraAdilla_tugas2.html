@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <title>SASRA ADILLA</title>
+  <link rel="stylesheet" href="">
+  <style>
+    header{
+      background: white;
+      display: flex;
+      justify-content: space-between; /* membuat elemen logo dan navigasi berada pada dua sisi yang berbeda */
+      align-items: center; /* membuat elemen logo dan navigasi berada pada tengah-tengah */
+      padding: 20px;
+      border: 2px solid black;
+    }
+    .logo{
+      justify-content: start;
+    }
+    .navigation ul{
+      display: flex;
+    }
+    .navigation ul li{
+      list-style-type: none;
+      justify-content: end;
+      margin-left: 30px;
+    }
+    .navigation ul li:first-child{
+      margin-left: 0;
+    }
+    .navigation ul li a{
+      color: black;
+    }
+    .navigation .search{
+      display: flex;
+      justify-content: end;
+    } 
+
+    .navigation .search img{
+      background: greenyellow;
+      padding: 2px 5px 2px 5px;
+
+    }
+
+    .second-nav{
+      border: 2px solid black;
+      margin-top: 10px;
+    }
+    .second-nav ul{
+      display: flex;
+      justify-content: center;
+    }
+   .second-nav ul li{
+      list-style-type: none;
+    } 
+    .second-nav ul li a{
+      margin-right: 80px;
+    }
+
+    .container{
+      width: 100%;
+      display: grid;
+      grid-template: repeat(4, 1fr);
+      grid-template-areas:  
+      'sidebar-kiri header sidebar-kanan'
+      'sidebar-kiri header sidebar-kanan'
+      'sidebar-kiri header sidebar-kanan'
+      'sidebar-kiri header arsip'
+      'sidebar-kiri main arsip'
+      'sidebar-kiri main arsip'
+      'sidebar-kiri main arsip'
+      'footer footer footer'
+    }
+
+    .sidebar-kiri{
+      padding: 20px;
+      border: 2px solid black;
+      margin-top: 10px;
+      grid-area: sidebar-kiri;
+    }
+
+    .header{
+      grid-area: header;
+      margin-top: 10px;
+      margin: 10px 10px 0 10px;
+      border: 2px solid black;
+     display: flex;
+     justify-content: center;
+    }
+    .sidebar-kanan{
+      padding: 10px;
+      border: 2px solid black;
+      margin-top: 10px;
+      grid-area: sidebar-kanan;
+    }
+    .arsip{
+      padding: 10px;
+      border: 2px solid black;
+      margin-top: 10px;
+      grid-area: arsip;
+    }
+    .main{
+      padding: 20px;
+        grid-area: main;
+      margin-top: 10px;
+      margin: 10px 10px 0 10px;
+      border: 2px solid black;
+    }
+    .main h2{
+      text-align: center;
+    }
+    .footer{
+      grid-area: footer;
+      padding: 20px;
+      margin-top: 10px;
+      border: 2px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>LOGO</h1>
+    </div>
+    <nav>
+      <div class="navigation">
+      <ul>
+        <li><a href="/">Link 1</a></li>
+        <li><a href="/">Link 2</a></li>
+        <li><a href="/">Link 3</a></li>
+        <li><a href="/">Link 4</a></li>
+      </ul>
+      <!-- INI BAGIAN SEARCH -->
+      <div class="search">
+     <input type="text" id="searchTerm">
+    <a href="#" img src="img/search.png" alt="Cari" onclick="search()" width="20px" width="80px"></a>
+    <div id="searchResults"></div>
+  </div>
+    </div>
+    </nav>
+  </header>
+
+<div class="second-nav">
+  <ul>
+    <li><a href="/">Section 1</a></li>
+    <li><a href="/">Section 2</a></li>
+    <li><a href="/">Section 3</a></li>
+    <li><a href="/">Section 4</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <div class="sidebar-kiri">
+      <h2>Artikel Terbaru</h2>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+      </ul>
+    </div>
+ <div class="header">
+<img src="" style="max-width: 80%; max-height: 80%;">
+</div>
+<div class="sidebar-kanan">
+  <h2>Topik Populer</h2>
+  <ul>
+    <li><a href="#">Link 1</a></li>
+    <li><a href="#">Link 2</a></li>
+    <li><a href="#">Link 3</a></li>
+    <li><a href="#">Link 4</a></li>
+    <li><a href="#">Link 5</a></li>
+  </ul>
+</div>
+
+ 
+
+<div class="main">
+  <h2>Isi Artikel</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+  <p>SASRA</p>
+</div>
+</body>
+</html>

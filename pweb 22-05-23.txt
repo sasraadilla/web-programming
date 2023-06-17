@@ -1,0 +1,7 @@
+# id
+class .
+toogle = hide . show
+Event :
+1 tombol == effect 5 selector
+
+selector box dan nama

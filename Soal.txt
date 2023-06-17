@@ -1,0 +1,10 @@
+1. coba anda periksa scriptnya. Berapa :
+a. Lebar dari "biru tua".
+b. Lebar dan tinggi dari "menu".
+c. Jarak antara pinggir "biru tua" dengan pinggir "menu".
+d. Jarak antara "menu" dengan "biru muda1"
+e. Lebar dan tinggi dari "biru muda2"
+
+2. Coba anda analisakan, apa yang terjadi jika property float dihilangkan dari selector "#biru_muda1"
+
+3. Coba anda analisakan, apa yang terjadi jika property float dihilangkan dari selector "#biru_muda2"
